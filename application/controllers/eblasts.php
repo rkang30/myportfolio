@@ -73,7 +73,7 @@ function index()
 			if(isset($flash_session_data['campaign_list'])){
 				$data['campaign_list'] = $flash_session_data['campaign_list']; //campaign id
 				require('asset/mailchimp_src/Mailchimp.php');
-				$mailchimp = new Mailchimp('4822b88b3a0d3ac2cdac6844df91d03d-us9');
+				$mailchimp = new Mailchimp('mailchimp_api_key');
 				
 				//fetch campaign name	
 				$this->db->select('campaign_name');
